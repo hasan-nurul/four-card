@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">  
+  <title>Frontend Mentor | Four card feature section</title>
+  <style>
+    .attribution a { color: hsl(228, 45%, 44%); }
+    body{
+      background-color: hsl(0, 0%, 98%);
+      Font-size: 15px;
+      font-family: 'Poppins', sans-serif;
+    }
+    h1, h2{
+      all: unset;
+    }
+    
+    #headt{
+      font-weight: 200;
+      color: hsl(0, 0%, 27%);
+      font-size: 32px;
+    }
+    .innerblock{
+      padding: 30px;
+      border-radius: 6px;
+      background-color: white;
+      box-shadow: 0px 3px 11px 0px rgba(88, 88, 88, 0.56);
+    }
+    .tagsmry{
+      color: rgb(167,161,161);
+    }
+    span{
+      color: hsl(0, 0%, 37%);
+      font-size: 18px;      
+    }
+    @media screen and (min-width:500px){
+      body{
+        margin: 0;
+      }
+      .container{  
+        margin: 30px 250px 30px 250px;  
+        display: grid;
+        grid-template-columns: 4fr 4fr 4fr;
+        grid-auto-rows: 230px;
+        column-gap: 35px;
+        row-gap: 35px;
+      }
+    #block4{
+        grid-column: 2/3;
+      }
+    #block1, #block3{
+        margin-top: 115px;
+        margin-bottom: -115px;
+      }
+      .primediv{
+        display: flex; 
+        flex-direction: column; 
+        justify-content:space-around; 
+        align-items: center; 
+        margin: 30px 550px 10px 550px;
+      }
+      .firstPara{
+        color: rgb(167, 161, 161); 
+        margin: 20px 520px 20px 520px; 
+        text-align: center;
+      }
+      .attribution { 
+        font-size: 13px;
+        text-align: center; 
+        margin-bottom: 0px; 
+      }
+    }
+    @media screen and (max-width:499px){
+      body{
+        margin: 0px;
+      }
+      .container{     
+        margin: 10px 15px 10px 15px;
+        display: grid;
+        grid-template-columns: auto;
+        grid-auto-rows: auto;
+        row-gap: 30px;
+      } 
+      #block1{
+        grid-column: 1;
+        grid-row: 1;
+      }
+      #block2{
+        grid-column: 1;
+        grid-row: 2;
+      }
+      #block4{
+        grid-column: 1;
+        grid-row: 3;
+      }
+      #block3{
+        grid-column: 1;
+        grid-row: 4;
+      }
+      .primediv{
+        display: flex; 
+        flex-direction: column; 
+        justify-content:space-around; 
+        align-items: center; 
+        margin: 20px 15px 20px 15px;
+      }
+      #headt{
+      font-weight: 200;
+      color: hsl(0, 0%, 27%);
+      font-size: 25px;
+      }
+      .firstPara{
+        color: rgb(167, 161, 161); 
+        margin: 20px 20px 20px 20px; 
+        text-align: center;
+      }
+      .attribution { font-size: 13px; text-align: center; margin-bottom: 20px; }
+    }
+  </style>
+</head>
+  <body role="banner">  
+        <div class="primediv">
+        <h1 id="headt">Reliable, efficient delivery</h1>
+        <h2 id="headt"><b>Powered by Technology</b></h2>
+        </div>
+        <p class="firstPara">Our Artificial Intelligence powered tools  use millions of project data points 
+        to ensure that your project is successful
+        </p> 
+    <div class="container">
+        <div id="block1" class="innerblock" style="border-top: 4px solid hsl(180, 62%, 55%);">
+          <span><b>Supervisor</b></span>
+          <p class="tagsmry">Monitors activity to identify project roadblocks</p>
+          <img src="images/icon-supervisor.svg" alt="icon" style="float: right;">
+        </div>
+        <div id="block2" class="innerblock" style="border-top: 4px solid hsl(0, 78%, 62%);">
+          <span><b>Team Builder</b></span>
+          <p class="tagsmry">Scans our talent network to create the optimal team for your project</p>
+          <img src="images/icon-team-builder.svg" alt="icon" style="float: right;">
+        </div>
+        <div id="block3" class="innerblock" style="border-top: 4px solid hsl(212, 86%, 64%);"> 
+          <span><b>Calculator</b></span>
+          <p class="tagsmry">Uses data from past projects to provide better delivery estimates</p>
+          <img src="images/icon-calculator.svg" alt="icon" style="float: right;"> 
+        </div>
+        <div id="block4" class="innerblock" style="border-top: 4px solid hsl(34, 97%, 64%);">
+          <span><b>Karma</b></span>
+          <p class="tagsmry">Regularly evaluates our talent to ensure quality</p>
+          <img src="images/icon-karma.svg" alt="icon" style="float: right;">
+        </div> 
+    </div>
+<footer style="margin-top: 0px;">
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Nurul Hasan</a>
+    </p>
+  </footer>
+</body>
+</html>
